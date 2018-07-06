@@ -22,7 +22,7 @@ def fbrute():
     print("=========================")
     print("CONCLUIDO!!!")
     print("Digite 'cd face-brute' para entrar na pasta do programa")
-    print("Em seguida digite 'python face-brute.py' para executar o programa")
+    print("Em seguida digite 'python2 face-brute.py' para executar o programa")
 
 
 def aribanner():
