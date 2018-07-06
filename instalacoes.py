@@ -13,8 +13,10 @@ def fbrute():
     print("====================================")
     print("Instalando arquivos dependentes...")
     time.sleep(3)
-    os.system("apt-get install pip")
-    os.system("pip install mechanize")
+    os.system("apt-get update")
+    os.system("apt-get install pip") #instalação do pip se não tiver...
+    os.system("pip install --upgrade pip") #atualização do pip 
+    os.system("pip install mechanize") #instalação do módulo machanize
     print("=========================")
     print("CONCLUIDO!!!")
     print("Digite 'cd face-brute' para entrar na pasta do programa")
