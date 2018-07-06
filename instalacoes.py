@@ -16,7 +16,9 @@ def fbrute():
     os.system("apt-get update")
     os.system("apt-get install python-pip") #instalação do pip caso não tiver
     os.system("pip install --upgrade pip") #atualização do pip 
+    os.system("pip2 install --upgrade pip2")
     os.system("pip install mechanize") #instalação do módulo machanize
+    os.system("pip2 install mechanize")
     print("=========================")
     print("CONCLUIDO!!!")
     print("Digite 'cd face-brute' para entrar na pasta do programa")
