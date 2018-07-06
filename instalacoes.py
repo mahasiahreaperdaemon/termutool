@@ -14,7 +14,7 @@ def fbrute():
     print("Instalando arquivos dependentes...")
     time.sleep(3)
     os.system("apt-get update")
-    os.system("apt-get install pip") #instalação do pip se não tiver...
+    os.system("apt-get install python-pip") #instalação do pip caso não tiver
     os.system("pip install --upgrade pip") #atualização do pip 
     os.system("pip install mechanize") #instalação do módulo machanize
     print("=========================")
