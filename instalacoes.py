@@ -8,7 +8,7 @@ import time
 def vsftpd():
     print("Baixando Vsftpd 2.3.4 - Exploiter...")
     time.sleep(3)
-    os.system("https://github.com/mahasiahreaperdaemon/vsftpd-exploiter.git")
+    os.system("git clone https://github.com/mahasiahreaperdaemon/vsftpd-exploiter.git")
     print("=========================")
     print("CONCLUIDO!!!")
     print("Digite 'cd vsftpd-exploiter' para entrar na pasta do programa")
