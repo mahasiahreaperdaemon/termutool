@@ -12,11 +12,13 @@ def principal():
     print("\033[32m[1]- Scanners de portas")
     print("[2]- Descobrimento web")
     print("[3]- Captura de banner")
-    print("[4]- Força Bruta\033[m")
+    print("[4]- Força Bruta")
+    print("[5]- Exploits")
+    print("[6]- Scanners de vulnerabilidades\033[m")
     print("\033[31m[0]- Sair do programa\033[m")     
     op = int(input("\033[32m\nopção >>> \033[m"))    
     
-    if op > 4:
+    if op > 6:
         os.system("clear")
         print("\033[31m A opção {} não existe, por favor escolha uma opção VÁLIDA!\033[m".format(op))
         time.sleep(3)
@@ -100,5 +102,64 @@ def principal():
             os.system("clear")
             exibirMensagem()
             sys.exit()
+            
+            
+    elif op == 4:
+        os.system("clear")
+        bruteMsg()
+        print("")
+        print("\033[32m[1]- Face-Brute")
+        print("[0]- Voltar\033[m")
+        print("\033[31m[99]- Sair do programa\033[m")
+        facebrute = int(input("\nopção >>> "        ))
+        
+        if facebrute > 1 and facebrute < 99 or facebrute > 99:
+            os.system("clear")
+            print("A opção {} não existe, por favor escolha uma opção VÁLIDA!".format(facebrute))
+            time.sleep(3)
+            principal()
+        
+        elif facebrute == 1:
+            os.system("clear")
+            fbrute()
+            
+        elif facebrute == 0:
+            principal()
+        
+        elif facebrute == 99:
+            os.system("clear")
+            exibirMensagem()
+            sys.exit()
+            
+            
+    elif op == 5:
+        os.system("clear")
+        exploitsMsg()
+        print("")
+        print("\033[32m[1]- Vsftpd 2.3.4 - Exploiter")
+        print("[0]- Voltar\033[m")
+        print("\033[31m[99]- Sair do programa\033[m")
+        exploits = int(input("\nopção >>> "        ))
+            
+        if exploits > 1 and exploits < 99 or exploits > 99:
+            os.system("clear")
+            print("A opção {} não existe, por favor escolha uma opção VÁLIDA!".format(exploits))
+            time.sleep(3)
+            principal()
+            
+        elif exploits == 1:
+            os.system("clear")
+            vsftpd()
+                
+        elif exploits == 0:
+            principal()
+            
+        elif exploits == 99:
+            os.system("clear")
+            exibirMensagem()
+            sys.exit()
+            
+            
+    
 
 principal()
