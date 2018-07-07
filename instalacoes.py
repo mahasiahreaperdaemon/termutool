@@ -4,6 +4,18 @@
 import os
 import time
 
+
+def vsftpd():
+    print("Baixando Vsftpd 2.3.4 - Exploiter...")
+    time.sleep(3)
+    os.system("https://github.com/mahasiahreaperdaemon/vsftpd-exploiter.git")
+    print("=========================")
+    print("CONCLUIDO!!!")
+    print("Digite 'cd vsftpd-exploiter' para entrar na pasta do programa")
+    print("Em seguida digite 'python3 vsftpd_exploiter.py' para executar o programa")
+    
+    
+
 def fbrute():
     print("Baixando Face-Brute...")
     time.sleep(3)
@@ -79,4 +91,12 @@ def bruteMsg():
     print("     TERMUTOOL     ")
     print("-------------------")
     print("  \033[36mForça bruta\033[m")
+    print("\033[32m#=#=#=#=#=#=#=#=#=#\033[m")
+    
+    
+def exploitsMsg():
+    print("\033[32m#=#=#=#=#=#=#=#=#=#")
+    print("     TERMUTOOL     ")
+    print("-------------------")
+    print("  \033[36mExploits\033[m")
     print("\033[32m#=#=#=#=#=#=#=#=#=#\033[m")
